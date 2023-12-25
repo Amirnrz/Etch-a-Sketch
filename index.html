@@ -3,10 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: start;
+      width: 600px;
+      height: 600px;
+      background-color: bisque;
+      overflow: hidden;
+    }
+    .grid-item {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+    }
+    .grid-item:hover {
+      background-color: aqua;
+    }
+  </style>
   <title>Sketch</title>
 </head>
 <body>
   
+  <div class="btn-container">
+    <button id="propmt-number">number</button>
+  </div>
+
+  <div class="container">
+
+  </div>
 
   <script src="./App.js"></script>
 </body>
